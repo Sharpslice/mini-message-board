@@ -22,5 +22,8 @@ indexRouter.get("/",(req,res)=>{
         messages: messages
     })
 })
+indexRouter.get("/new",(req,res)=>{
+    res.render("form");
+})
 
 module.exports = indexRouter
