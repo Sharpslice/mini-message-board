@@ -1,14 +1,21 @@
 <html>
+    <link rel ="stylesheet" href="/index.css">
     <body>
+        <h1><%= title %> </h1>
         
+        <a href="/new" class="link-btn">Post</a>
+        
+
+        
+        <div id="messageBoard">
+            
             <% messages.forEach((message)=>{ %>
-                <div>
-                    
-                    <p><%= message.text %></p>
+                <div id="messageCard">
                     <p><%= message.user %></p>
+                    <p><%= message.text %></p>
                     <p><%= message.added %></p>
                 </div>
             <%}) %>
-        
+        </div>
     </body>
 </html>

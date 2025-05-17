@@ -7,7 +7,8 @@ app.set("view engine","ejs");
 const indexRouter = require("./route/index")
 
 
-
+app.use(express.urlencoded({extended:true}))
+app.use(express.static("public"))
 app.use("/",indexRouter);
 
 const PORT = 3000;
