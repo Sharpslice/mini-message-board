@@ -1,12 +1,13 @@
 <html>
+    <link rel="stylesheet" href="/form.css">
     <body>
-        <h1>Message</h1>
+        
         <form method="POST" action="/new">
             <label for ="username">Username</label>
             <input type="text" id="username" name="username" required>
 
             <label for ="messageText">message</label>
-            <input type="text" id="messageText" name="messageText"required>
+            <textarea id="messageText" name="messageText"></textarea>
 
             <button type="submit">submit</button>
         </form>
